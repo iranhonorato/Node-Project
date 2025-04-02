@@ -1,0 +1,6 @@
+# Arquivo onde ficam os módulos baixados durante a instalação das dependências
+node_modules
+
+
+# Nosso particular enviroment
+.env

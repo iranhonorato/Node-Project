@@ -1,0 +1,9 @@
+1. Como utilizaremos o framework fastify precisamos instalar as dependências necessárias para tal
+- npm i fastify (Instala as dependências do fastify)
+- npm init -y  (Cria um package.json) 
+
+2. É interessante também adicionar ao package.json um item a mais abaixo de "start":
+- "dev": "node --watch server.js" 
+- Agora para rodar basta fazer 'npm run dev' no terminal
+
+3. Devemos criar um arquivo chamdo routes.http e instalar a extensão Rest Client para testarmos as rotas da nossa API 
