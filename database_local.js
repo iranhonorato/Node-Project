@@ -1,6 +1,8 @@
 import { randomUUID } from "node:crypto"
 
-// A importação deve ser assim por conta com ES Module
+
+
+// A importação deve ser assim por conta com ES Modules
 export default class DatabaseMemory {
     #alimentos = new Map()
 
