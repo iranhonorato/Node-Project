@@ -1,19 +1,31 @@
-export class DatabaseMemory {
+import { randomUUID } from "node:crypto"
+
+// A importação deve ser assim por conta com ES Module
+export default class DatabaseMemory {
     #alimentos = new Map()
 
 
-    list () {}
+    list () {
+        return Array.from(this.#alimentos)
+    }
 
 
-    add () {}
+    add (alimento) {
+        const alimentoId = randomUUID()
+        this.#alimentos.set(alimentoId, alimento)
+    }
 
 
 
-    update () {}
+    update (id, alimento) {
+        this.#alimentos.set(id, alimento)
+    }
 
 
 
-    delete () {}
+    delete (id) {
+        this.#alimentos.delete(id)
+    }
 
 
 }

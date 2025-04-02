@@ -2,8 +2,17 @@
 - npm i fastify (Instala as dependências do fastify)
 - npm init -y  (Cria um package.json) 
 
-2. É interessante também adicionar ao package.json um item a mais abaixo de "start":
-- "dev": "node --watch server.js" 
+
+
+2. Vamos rodar nosso projeto no format ES Modules (ECMAScript Modules). Por conta disso precisamos adicionar o seguinte item ao package.json:
+- "type": "module" (Abaixo de "main")
+
+
+
+3. É interessante também adicionar ao package.json um item a mais:
+- "dev": "node --watch server.js" (Abaixo de "start")
 - Agora para rodar basta fazer 'npm run dev' no terminal
 
-3. Devemos criar um arquivo chamdo routes.http e instalar a extensão Rest Client para testarmos as rotas da nossa API 
+
+
+4. Devemos criar um arquivo chamdo routes.http e instalar a extensão Rest Client para testarmos as rotas da nossa API 

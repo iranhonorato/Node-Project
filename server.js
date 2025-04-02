@@ -1,19 +1,20 @@
+import DatabaseMemory from './database_local.js'
 import Fastify from 'fastify'
-import DatabaseMemory from "database_local.js"
-
-
 
 
 
 const fastify = Fastify({
-    logger: true
+  logger: true
 })
+
 
 const database = new DatabaseMemory()
 
 
+
 // Lista alimentos
 fastify.get('/alimentos', async (request, reply) => {
+
 })
 
 
