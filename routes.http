@@ -9,9 +9,17 @@ GET http://localhost:777/alimentos
 
 
 POST http://localhost:777/alimentos 
+Content-Type: application/json
 
 
-
+{
+    "nome": "Arroz",
+    "peso": "100g",
+    "ptn": 4.42, 
+    "carb": 28, 
+    "fat": 1.68,
+    "kcal": 144.8
+}
 
 
 
@@ -22,7 +30,7 @@ POST http://localhost:777/alimentos
 
 
 PUT http://localhost:777/alimentos 
-
+Content-Type: application/json
 
 
 

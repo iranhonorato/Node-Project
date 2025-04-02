@@ -8,7 +8,11 @@ export default class DatabaseMemory {
 
 
     list () {
-        return Array.from(this.#alimentos)
+        return Array.from(this.#alimentos).map( (lista) => { 
+            const id = lista[0]
+            const data = lista[1] 
+            return {id: id, ...data}
+        })
     }
 
 
