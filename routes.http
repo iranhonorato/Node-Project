@@ -1,0 +1,41 @@
+GET http://localhost:777/alimentos 
+
+
+
+
+###
+
+
+
+
+POST http://localhost:777/alimentos 
+
+
+
+
+
+
+
+
+### 
+
+
+
+PUT http://localhost:777/alimentos 
+
+
+
+
+
+
+
+
+###
+
+
+
+
+DELETE  http://localhost:777/alimentos 
+
+
+

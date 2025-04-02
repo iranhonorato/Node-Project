@@ -1,10 +1,15 @@
 import Fastify from 'fastify'
+import DatabaseMemory from "database_local.js"
+
+
+
+
 
 const fastify = Fastify({
     logger: true
 })
 
-
+const database = new DatabaseMemory()
 
 
 // Lista alimentos
