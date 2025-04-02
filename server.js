@@ -51,7 +51,7 @@ fastify.post('/alimentos', async (request, reply) => {
 // Edita aliemntos
 fastify.put('/alimentos/:id', async (request, reply) => {
     const alimentoID = request.params.id
-    const data = {
+    const {
         "nome": nome, 
         "peso": peso, 
         "ptn": ptn, 
@@ -60,7 +60,15 @@ fastify.put('/alimentos/:id', async (request, reply) => {
         "kcal": kcal
         } = request.body 
 
-    database.update(alimentoID, data)
+    database.update(alimentoID, {
+        "nome": nome, 
+        "peso": peso, 
+        "ptn": ptn, 
+        "carb": carb,
+        "fat": fat, 
+        "kcal": kcal
+        })
+        
     return reply.status(204).send("Alimento atualizado com sucesso")
 })
 

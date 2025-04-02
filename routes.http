@@ -29,11 +29,18 @@ Content-Type: application/json
 
 
 
-PUT http://localhost:777/alimentos 
+PUT http://localhost:777/alimentos/a9582730-2317-48aa-b877-6fd26ad80269
 Content-Type: application/json
 
 
-
+{
+    "nome": "Arroz",
+    "peso": "100g",
+    "ptn": 4.42, 
+    "carb": 28, 
+    "fat": 1.22,
+    "kcal": 140.66
+}
 
 
 
@@ -43,7 +50,7 @@ Content-Type: application/json
 
 
 
-DELETE  http://localhost:777/alimentos 
+DELETE  http://localhost:777/alimentos/a9582730-2317-48aa-b877-6fd26ad80269
 
 
 
