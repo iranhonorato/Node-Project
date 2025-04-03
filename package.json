@@ -1,16 +1,17 @@
 {
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "dotenv": "^16.4.7",
     "fastify": "^5.2.2"
   },
   "name": "node-project",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch servidor.js"
   },
   "keywords": [],
   "author": "",
