@@ -72,10 +72,21 @@ fastify.put("/alimentos/:id", async (request, reply) => {
 
 fastify.delete("/alimentos/:id", async (request, reply) => {
     const alimentoID = request.params
-    
+
     if (!alimentoID) {return reply.status(404).send({erro: "Alimento não encontrado"})}
 
     await sql `DELETE FROM alimentos WHERE id = ${alimentoID}`
 
     return reply.status(204).send({message: "Alimento excluído com sucesso"})
+})
+
+
+
+
+
+fastify.listen({ port: 777 }, async (err, address) => {
+    if (err) {
+        fastify.log.error(err)
+        process.exit(1)
+    }
 })
