@@ -18,15 +18,21 @@
 4. Devemos criar um arquivo chamdo routes.http e instalar a extensão Rest Client para testarmos as rotas da nossa API (Ou apenas utilize o Postman)
 
 
-
-5. Instalando as dependências necessárias para a conexão com o nosssa bcando de dados PostgreSQL:
+Observacao: Vamos criar um banco de dados PostgreSQL que será hospedado no Neon Database
+5. Instalando as dependências necessárias para a conexão com o nosssa banco de dados PostgreSQL:
 - npm install dotenv @neondatabase/serverless fastify.
 - dotenv: Para carregar variáveis de ambiente do .env.
 - @neondatabase/serverless: Para conectar ao banco Neon PostgreSQL.
-
+IMPORTANTE: Não se esqueça de criar um arquivo .env e colcoar lá "DATABASE_URL" do seu banco de dados.
 
 
 
 6. Criamos um arquivo novo chamado "servidor.js", onde faremos nossa API rodar com um banco de dados PostgreSQL
 - Precisamos reescrever as linhas de código para se adequar ao padrão SQL.
 - Precisamos trocar "dev": "node --watch server.js" por "dev": "node --watch servidor.js" no arquivo package.json.
+
+
+
+7. Antes de rodar o servidor, precisamos criar a tabela no banco Neon.
+- Acesse o Neon Database e vá até o console SQL.
+- Execute o comando SQl para criar sua tabela
